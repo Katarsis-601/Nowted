@@ -2,18 +2,20 @@
   max-width: 1440px;
   min-height: 1515px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 .App {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
 }
 .navbar {
+  position: absolute;
   max-width: 1140px;
   width: 1140px;
   font-family: "Poppins", sans-serif;
+  top: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +62,8 @@
   cursor: pointer;
 }
 .banner {
-  margin-top: 100px;
+  position: absolute;
+  top: 235px;
   width: 922px;
   max-height: 302px;
   display: flex;
@@ -92,4 +95,73 @@
   padding: 15px 30px;
   font-size: 16px;
   background-color: #3a3af4;
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 609px;
+  margin-top: 65px;
+  border-radius: 6px;
+  padding: 13px 30px 34px;
+  background: rgba(255, 255, 255, 0.03);
+}
+.preview .topbar {
+  max-width: 946px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.preview .topbar ul {
+  width: 5%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.preview .topbar ul li {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.preview .topbar ul li:nth-child(1) {
+  background: #ff007a;
+}
+
+.preview .topbar ul li:nth-child(2) {
+  background: #ffe600;
+}
+
+.preview .topbar ul li:nth-child(3) {
+  background: #05ff00;
+}
+.preview .searchbar {
+  background: rgba(255, 255, 255, 0.05);
+  width: 348px;
+  max-height: 35px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 269px;
+  padding: 10px 15px;
+  justify-content: space-between;
+}
+.preview .searchbar p {
+  width: 80%;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+  text-align: start;
+}
+.preview .searchbar img {
+  cursor: pointer;
+}
+.preview .app_img {
+  margin-top: 20px;
+  width: 946px;
+}
+.bg-2 {
+  top: 290px;
+  position: absolute;
 }
